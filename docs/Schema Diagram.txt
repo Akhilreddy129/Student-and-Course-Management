@@ -1,0 +1,57 @@
+src/main/java
+│
+├── entity
+│   ├── Person
+│   │    ├── id : int
+│   │    ├── firstName : String
+│   │    ├── lastName : String
+│   │    └── email : String
+│   │
+│   ├── Student extends Person
+│   │    ├── batch : String
+│   │    └── active : boolean
+│   │
+│   ├── Trainer extends Person
+│   │    └── expertise : String
+│   │
+│   ├── Course
+│   │    ├── id : int
+│   │    ├── courseName : String
+│   │    ├── description : String
+│   │    ├── durationInWeeks : int
+│   │    └── status : CourseStatus
+│   │
+│   └── Enrollment
+│        ├── id : int
+│        ├── studentId : int
+│        ├── courseId : int
+│        ├── enrollmentDate : LocalDate
+│        └── status : EnrollmentStatus
+│
+├── enums
+│   ├── CourseStatus { ACTIVE, INACTIVE }
+│   └── EnrollmentStatus { ACTIVE, COMPLETED, CANCELLED }
+│
+├── exception
+│   ├── EntityNotFoundException
+│   └── InvalidInputException
+│
+├── repository
+│   ├── StudentRepository
+│   ├── CourseRepository
+│   └── EnrollmentRepository
+│
+├── service
+│   ├── StudentService
+│   ├── CourseService
+│   └── EnrollmentService
+│
+├── util
+│   ├── IdGenerator
+│   └── InputValidator
+│
+├── constants
+│   ├── AppConstants
+│   └── MenuOptions
+│
+└── Main
