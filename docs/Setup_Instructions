@@ -1,0 +1,20 @@
+JDK Version Used
+JDK 17
+Installed from Oracle OpenJDK
+
+Hello World Program
+After installing Java, a simple HelloWorld.java file was created and run successfully:
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+Compiled using:
+javac HelloWorld.java
+
+Executed using:
+java HelloWorld
+
+Output:
+Hello, World!
