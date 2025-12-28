@@ -23,5 +23,17 @@ Collections (ArrayList vs arrays)
 Exception handling with try-catch and custom exceptions
 Writing clean, readable, modular code
 
+                Person
+              /       \
+        Student       Trainer
+          |              |
+          |              |
+          |              |
+       Enrollment ------ Course
+Student inherits from Person.
+
+Trainer inherits from Person.
+
+Enrollment connects Student and Course.
 
 
